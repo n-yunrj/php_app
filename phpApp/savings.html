@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>365日貯金アプリ</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <h1>365日貯金アプリケーション</h1>
+    
+    <!-- ボタンを含むフォーム -->
+    <form id="savingsForm">
+        <input type="button" id="getTodaySavings" value="今日の貯金額">
+    </form>
+
+    <!-- 結果表示エリア -->
+    <div id="resultArea"></div>
+
+    <script>
+        // ボタンが押されたときの非同期通信処理
+        $(document).ready(function () {
+            $('#getTodaySavings').click(function () {
+                $.ajax({
+                    type: 'POST',
+                    url: 'process.php',
+                    data: { getTodaySavings: true },
+                    success: function (response) {
+                        // 結果を表示
+                        $('#resultArea').html(response);
+                    }
+                });
+            });
+        });
+    </script>
+
+    <form action="savingList.php" method="get">
+        <input type="submit" value="貯金履歴一覧">
+    </form>
+
+
+</body>
+</html>
