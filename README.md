@@ -30,17 +30,22 @@
 
 1.下記のリポジトリをクローンします。
 
+```
 　git clone https://github.com/n-yunrj/php_app.git
-
+```
 
 2.MAMPのhtdocsディレクトリにリポジトリを移動します。
 
-　mv /Applications/MAMP/htdocs/
+```
+　cd /Applications/MAMP/htdocs/
+```
 
 3.MAMPを起動し、ローカルサーバーを立ち上げます。
 
 4.Webブラウザで以下のURLにアクセスします。
 
+```
 　http://localhost:8888/phpApp/savings.html
+```
 
 5.アプリケーションが正常に表示されれば、インストールが完了しています。
