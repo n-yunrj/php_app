@@ -25,7 +25,7 @@ function displayTodaySavings() {
     $data = array(date('Y-m-d'), $todaySavings);
     
     // CSVファイルにデータを追記
-    $csvFile = '/Applications/MAMP/htdocs/savings App/data.csv';
+    $csvFile = '/Applications/MAMP/htdocs/phpApp/data.csv';
     $file = fopen($csvFile, 'a'); // 'a'は追記モード
     fputcsv($file, $data);
     fclose($file);
@@ -40,7 +40,7 @@ if (isset($_POST['getTodaySavings'])) {
 
 <?php
 // CSVファイルから貯金額のデータを読み込み、合計を計算する
-$csvFile = '/Applications/MAMP/htdocs/savings App/data.csv';
+$csvFile = '/Applications/MAMP/htdocs/phpApp/data.csv';
 $totalSavings = 0;
 
 if (($handle = fopen($csvFile, "r")) !== FALSE) {
