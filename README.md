@@ -39,7 +39,7 @@ Windows
 https://blanche-toile.com/web/windows-mamp
 ```
 
-### インストール手順
+### 手順
 
 1.MAMPのhtdocsディレクトリ配下に「phpApp」という名前のフォルダを作成します。
 
