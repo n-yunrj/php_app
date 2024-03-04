@@ -41,19 +41,21 @@ https://blanche-toile.com/web/windows-mamp
 
 ### インストール手順
 
-1.下記のリポジトリをクローンします。
+1.MAMPのhtdocsディレクトリ配下に「phpApp」という名前のフォルダを作成します。
+
+2.下記のリポジトリをクローンします。
 
 ```
 　git clone https://github.com/n-yunrj/php_app.git
 ```
 
-2.MAMPのhtdocsディレクトリにリポジトリを移動します。
+3.MAMPのphpAppディレクトリにリポジトリを移動します。
 
 ```
-　cd /Applications/MAMP/htdocs/
+　cd /Applications/MAMP/htdocs/phpApp
 ```
 
-3.MAMPを起動し、ローカルサーバーを立ち上げます。
+4.MAMPを起動し、ローカルサーバーを立ち上げます。
 
  MAMPの起動後、Portsの設定画面を開き
 
@@ -63,10 +65,10 @@ https://blanche-toile.com/web/windows-mamp
 
  （ポート番号を8888以外に設定した場合、手順4でアクセスするURLについて、”localhost:”の後に指定したポート番号を入力してください）
 
-4.Webブラウザで以下のURLにアクセスします。
+5.Webブラウザで以下のURLにアクセスします。
 
 ```
 　http://localhost:8888/phpApp/savings.html
 ```
 
-5.アプリケーションが正常に表示されれば完了です。
+6.アプリケーションが正常に表示されれば完了です。
